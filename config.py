@@ -16,13 +16,13 @@ user = getpass.getuser()
 
 data_dir = (
     os.environ['TEMPENS_DATA_DIR'] if 'TEMPENS_DATA_DIR' in os.environ else
-    '/home/yucen/data')
+    'data')
 
 # Directory for storing the results of individual training runs.
 
 result_dir = (
     os.environ['TEMPENS_RESULT_DIR'] if 'TEMPENS_RESULT_DIR' in os.environ else
-    '/home/yucen/teresults/cifar100/aug/10000/te_embed/')
+    'results')
 
 #----------------------------------------------------------------------------
 # Theano configuration.
